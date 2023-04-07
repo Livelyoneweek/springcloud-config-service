@@ -8,4 +8,5 @@ spring:
     config:
       server:
         git:
-          uri: file://C:\Users\User\Desktop\Coding\inflearn\SpringCloud\git-local-repo
+#          uri: file://C:\Users\User\Desktop\Coding\inflearn\SpringCloud\git-local-repo
+          uri: file://C:\Users\choi\Desktop\Choi\coding\inflearn\springCloud\git-local-repo
