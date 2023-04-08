@@ -4,9 +4,13 @@ server:
 spring:
   application:
     name: config-service
+  profiles:
+    active: native
   cloud:
     config:
       server:
+        native:
+          search-locations: file://${user.home}\Desktop\Choi\coding\inflearn\springCloud
         git:
           uri: https://github.com/Livelyoneweek/spring-cloud-config.git # 끝에 git 붙여도 되고 안붙여도 됨
 #          private 이면 네임과 pwd 입력
