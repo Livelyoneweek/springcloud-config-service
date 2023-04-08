@@ -4,16 +4,27 @@ server:
 spring:
   application:
     name: config-service
+  rabbitmq:
+    host: 127.0.0.1
+    port: 5672
+    username: guest
+    password: guest
   profiles:
     active: native
   cloud:
     config:
       server:
         native:
-          search-locations: file://${user.home}\Desktop\Choi\coding\inflearn\springCloud
+          search-locations: file://${user.home}\Desktop\Choi\coding\inflearn\springCloud\native-local-repo
         git:
           uri: https://github.com/Livelyoneweek/spring-cloud-config.git # 끝에 git 붙여도 되고 안붙여도 됨
 #          private 이면 네임과 pwd 입력
 #          username: [your name]
 #          password: [your pwd]
 #          uri: file://C:\Users\User\Desktop\Coding\inflearn\SpringCloud\git-local-repo
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: health, busrefresh
