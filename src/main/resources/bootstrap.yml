@@ -1,0 +1,8 @@
+encrypt:
+  key-store:
+    location: file:///${user.home}\Desktop\Choi\coding\keystore\apiEncryptionKey.jks
+    password: test1234
+    alias: apiEncryptionKey
+  #  key: abcdefghijklmnopqrstuvwxyz0123456789
+  #대칭키에 사용될 키, post, /encrypt 경로로 body에 raw 값 텍스트 주면 암호화하여 반환함
+  #/decrypt 로 값 주면 복화하여 반환함
