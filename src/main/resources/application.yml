@@ -15,7 +15,7 @@ spring:
     config:
       server:
 #        native:
-#          search-locations: file://C:\Users\choi\Desktop\Choi\coding\inflearn\springCloud\native-local-repo
+#          search-locations: file:///${user.home}\Desktop\Choi\coding\inflearn\springCloud\native-local-repo
         git:
           uri: https://github.com/Livelyoneweek/spring-cloud-config # 끝에 git 붙여도 되고 안붙여도 됨
 #          private 이면 네임과 pwd 입력
